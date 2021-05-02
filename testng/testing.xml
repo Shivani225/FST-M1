@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ExampleSuite" parallel = "classes">
+
+    <test name="SuiteTests">
+       <!-- <groups>	
+         <run>	
+            <include name="HeaderTests" />       
+            <exclude name="HeaderTests" />
+        </run>	
+    </groups>--> 
+    <parameter name = "username" value = "admin"/>
+    <parameter name = "password" value = "password"/>	
+        <classes>
+            <class name="testNGactivities.Activity4DemoOne" />
+            <class name="testNGactivities.Activity4DemoTwo" />
+            <class name="testNGactivities.TestNGActivity5" />
+            <class name="testNGactivities.TestNGActivity6" />
+            <class name="testNGactivities.TestNGActivity7" />
+            <class name="testNGactivities.TestNGActivity9" />
+        </classes>
+    </test>
+</suite>
