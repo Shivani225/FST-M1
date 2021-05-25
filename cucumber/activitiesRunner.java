@@ -9,13 +9,15 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
     features = "Features",
     glue = {"cucumberActivities"},
+    //tags = "@SmokeTest",
     //tags = "@activity1_1"
     //tags = "@activity1_2"
     //tags = "@activity1_3"
     //tags = "@activity2_4"
     tags = "@activity2_5",
     //plugin = {"pretty"},
-    plugin = {"html:test-reports"},
+    plugin = {"pretty", "html:test-reports"},
+    //plugin = {"json: test-reports/json-report.json"},
     monochrome = true
 
 )
